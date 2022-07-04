@@ -1,0 +1,126 @@
+.hero {
+    .container {
+        @media screen and (min-width: 480px) {
+        width: 360px;
+        margin: 0 auto;
+    }
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.hero {
+    background-color: var(--hero-background-color);
+    max-width: 480px;
+    background-image: linear-gradient( 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @include retina {
+        background-image: linear-gradient( 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-mob-2x.jpg);   
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient( 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-tab.jpg);    
+        @include retina {
+            background-image: linear-gradient( 
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-tab-2x.jpg);   
+        }
+     
+      }
+     
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient( 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg.jpg);
+        @include retina {
+            background-image: linear-gradient( 
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-2x.jpg);   
+        }
+      }
+     
+    }
+
+
+      
+   
+
+
+.hero__title {
+    @include font(900, 24px, 1.6, null);
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+    width: 360px;
+    
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        width: 360px;
+        @include font(900, 26px, 1.6, null);
+
+      }
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        @include font(900, 44px, 1.36, null);   
+   
+        }
+
+}
+
+
+.hero__btn {
+    &:hover,
+    &:focus {background-color: var(--hero-btn-color);}
+} 
+
+.hero__btn {
+    font-family:inherit;
+    background-color: var(--accent-color);
+    @include font(700, 16px, 1.88, null);
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--hero-title-color);
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    border: none;
+
+    transition-property: background-color;
+    @extend %transition;
+}
+
+.btn {cursor: pointer;}

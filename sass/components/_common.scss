@@ -1,0 +1,23 @@
+body {
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+    background-color: var(--body-background-color);
+}
+
+.section {
+    padding-top: var(--typical-padding);
+    padding-bottom: var(--typical-padding);
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.list {
+    list-style: none;
+}
+.link, .logo {
+    text-decoration: none;
+}

@@ -521,10 +521,6 @@ body {
   line-height: 1.175;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--main-title-color);
-}
-.mob-menu__link .current {
-  color: var(--accent-color);
 }
 
 .mob-contacts {
@@ -1276,7 +1272,7 @@ body {
 .projects__item--btn {
   margin-right: 8px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .projects__item--btn {
     margin-bottom: 15px;
   }
@@ -1324,7 +1320,8 @@ body {
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -1337,6 +1334,7 @@ body {
   border: 1px solid var(--header-background-color);
   border-top: none;
   padding: 20px 24px 20px 24px;
+  flex-grow: 1;
 }
 
 .projects__name {

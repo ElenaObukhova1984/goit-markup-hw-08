@@ -46,8 +46,10 @@
 
 .projects__item--btn {
     margin-right: 8px;
-    margin-bottom: 15px;
-  
+    @media screen and (max-width: 767px) {
+     margin-bottom: 15px;
+      }
+      
 }
   
 
@@ -61,6 +63,7 @@
     
 .projects__item {
     background-color: var(--projects-item-background-color) ;
+    
        
     @include tablet {
     width: calc((100% - 30px) / 2);
@@ -99,11 +102,14 @@
     
 }    
 
-.projects__link {
-         display: block;
+ .projects__link {
+         display: flex;
+         flex-direction: column;
          height: 100%;
+    
+   }
    
-}
+
 
 .projects__link {
     &:hover,
@@ -116,12 +122,10 @@
         border: 1px solid var(--header-background-color);
         border-top: none;
         padding: 20px 24px 20px 24px;
-
+        flex-grow: 1;
+ 
     
 }     
-
-
-
 
 .projects__name {
         @include font(700, 18px, 2, 0.06em);

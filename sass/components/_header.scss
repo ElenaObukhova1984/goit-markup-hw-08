@@ -164,6 +164,9 @@
   }
 }
 
+
+
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -203,10 +206,9 @@
     line-height: calc(47 / 40);
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--main-title-color);
-    .current {color: var(--accent-color);}
+    
+    }
   
-      }
 
   .mob-contacts {
     margin-bottom: 0px;

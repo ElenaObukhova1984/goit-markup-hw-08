@@ -21,7 +21,7 @@
     height: 28px;
     
     margin-right: 94px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       @include font(700, 26px, 1.19, 0.03em);
       width: 145px;
       height: 31px;
@@ -41,7 +41,7 @@
 .nav__list, .contacts__list {
     display: none;
    
-@media screen and (min-width: 768px) {
+    @include tablet {
     display: flex;
     }
     
@@ -58,7 +58,7 @@
 }
 
 .contacts__item:not(:last-child) {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
   margin-right: 50px;}
 }
 
@@ -137,7 +137,7 @@
 .contacts__icon {
     fill: currentColor;
     margin-right: 8px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
     margin-right: 10px;
 }
 }
@@ -148,7 +148,7 @@
  
   border: none;
   background: transparent;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -156,10 +156,10 @@
 .menu-close-btn {
   display: block;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 35px;
   border: none;
   background: transparent;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -174,7 +174,7 @@
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
-  padding-left: 40px;
+  padding-left: 25px;
   .container {
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@
     overflow-y: auto;
     padding-right: 0;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -253,7 +253,7 @@
   }
 
   .mob-soc__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
     
   }
 

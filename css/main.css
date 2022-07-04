@@ -471,7 +471,7 @@ body {
 .menu-close-btn {
   display: block;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 35px;
   border: none;
   background: transparent;
 }
@@ -491,7 +491,7 @@ body {
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
-  padding-left: 40px;
+  padding-left: 25px;
 }
 .mob-menu .container {
   display: flex;
@@ -572,7 +572,7 @@ body {
 }
 
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mob-soc__link {
@@ -1325,6 +1325,7 @@ body {
 
 .projects__link {
   display: block;
+  height: 100%;
 }
 
 .projects__link:hover, .projects__link:focus {

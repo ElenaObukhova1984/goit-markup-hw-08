@@ -33,12 +33,12 @@
 
 
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
     display: flex;
     justify-content: center;
     
 }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-bottom: 50px;
     }
 }
@@ -46,8 +46,8 @@
 
 .projects__item--btn {
     margin-right: 8px;
-    @media screen and (min-width: 1200px) {
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+  
 }
   
 
@@ -55,18 +55,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-        
+            
   }
 
     
 .projects__item {
     background-color: var(--projects-item-background-color) ;
-    
-    @media screen and (min-width: 768px) {
+       
+    @include tablet {
     width: calc((100% - 30px) / 2);
              }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
     width: calc((100% - 60px) / 3);
                          }
             }
@@ -101,6 +101,7 @@
 
 .projects__link {
          display: block;
+         height: 100%;
    
 }
 

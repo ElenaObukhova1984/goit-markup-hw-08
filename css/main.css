@@ -84,6 +84,7 @@ body {
 }
 
 .container, .card-set {
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -647,13 +648,13 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title-color);
-  width: 360px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -1173,7 +1174,7 @@ body {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   height: 50px;
@@ -1184,6 +1185,11 @@ body {
   background-color: #2F303A;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
